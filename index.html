@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>From Shy to Bold</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: white;
+      color: #111;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page {
+      width: 90%;
+      max-width: 1000px;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3.4rem;
+      letter-spacing: 6px;
+      color: #f2c88f;
+      text-shadow:
+        1px 1px 0 #c99163,
+        2px 2px 0 #ffffff,
+        3px 3px 8px rgba(0, 0, 0, 0.15);
+      margin-bottom: 35px;
+    }
+
+    .poem-shape {
+      font-weight: 900;
+      font-size: 1.45rem;
+      line-height: 1.05;
+      letter-spacing: -1px;
+      text-align: center;
+      display: inline-block;
+      white-space: pre;
+    }
+
+    .line {
+      display: block;
+    }
+
+    .small {
+      font-size: 0.95rem;
+    }
+
+    .medium {
+      font-size: 1.15rem;
+    }
+
+    .large {
+      font-size: 1.35rem;
+    }
+
+    .largest {
+      font-size: 1.55rem;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 2rem;
+        letter-spacing: 3px;
+      }
+
+      .poem-shape {
+        font-size: 0.9rem;
+        letter-spacing: -0.5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <h1>FROM SHY TO BOLD</h1>
+
+    <section class="poem-shape" aria-label="Concrete poem about becoming confident through design">
+      <span class="line small">I arrived quiet,</span>
+      <span class="line medium">carrying New York shadows inside</span>
+      <span class="line large">folded hands. Texas opened like sunlight</span>
+      <span class="line largest">across my screen. Now I design louder: color becomes courage,</span>
+      <span class="line largest">motion becomes memory, buttons become doors. My manifesto is simple:</span>
+      <span class="line large">build what helps shy voices glow, move, speak,</span>
+      <span class="line medium">and take up space.</span>
+    </section>
+  </main>
+</body>
+</html>
