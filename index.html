@@ -3,94 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>From Shy to Bold</title>
+  <title>Small to Seen</title>
 
   <style>
     body {
       margin: 0;
       min-height: 100vh;
-      background: white;
-      color: #111;
-      font-family: Arial, Helvetica, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
+      background:
+        radial-gradient(circle at 70% 40%, rgba(255, 205, 87, 0.95), transparent 28%),
+        linear-gradient(135deg, #121629 0%, #24213f 38%, #7d4f31 68%, #e7a957 100%);
+      font-family: Georgia, "Times New Roman", serif;
+      color: #fff7ea;
     }
 
-    .page {
-      width: 90%;
-      max-width: 1000px;
+    main {
+      width: min(92vw, 980px);
       text-align: center;
-      padding: 40px 20px;
+      padding: 42px 18px;
     }
 
     h1 {
-      font-size: 3.4rem;
-      letter-spacing: 6px;
-      color: #f2c88f;
-      text-shadow:
-        1px 1px 0 #c99163,
-        2px 2px 0 #ffffff,
-        3px 3px 8px rgba(0, 0, 0, 0.15);
-      margin-bottom: 35px;
+      margin-bottom: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(2.2rem, 6vw, 5rem);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ffd08a;
+      text-shadow: 0 3px 0 #7b3f2d, 0 0 20px rgba(255, 208, 138, 0.65);
     }
 
-    .poem-shape {
-      font-weight: 900;
-      font-size: 1.45rem;
-      line-height: 1.05;
-      letter-spacing: -1px;
-      text-align: center;
-      display: inline-block;
-      white-space: pre;
+    .poem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.38));
     }
 
     .line {
       display: block;
+      padding: 2px 10px;
+      font-weight: 800;
+      font-size: clamp(1.05rem, 2.2vw, 2rem);
+      line-height: 1.12;
+      text-align: center;
+      background: rgba(18, 22, 41, 0.12);
+      border-radius: 999px;
+      white-space: nowrap;
     }
 
-    .small {
-      font-size: 0.95rem;
+    .w1  { width: 70px; }
+    .w2  { width: 130px; }
+    .w3  { width: 230px; }
+    .w4  { width: 330px; }
+    .w5  { width: 390px; }
+    .w6  { width: 470px; }
+    .w7  { width: 440px; }
+    .w8  { width: 560px; font-size: clamp(1.25rem, 2.8vw, 2.35rem); }
+    .w9  { width: 420px; }
+    .w10 { width: 310px; }
+    .w11 { width: 210px; }
+    .w12 { width: 340px; }
+    .w13 { width: 365px; }
+    .w14 { width: 260px; }
+    .w15 { width: 335px; }
+    .w16 { width: 180px; }
+    .w17 { width: 130px; }
+
+    a {
+      color: #ffe7a8;
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 5px;
     }
 
-    .medium {
-      font-size: 1.15rem;
+    a:hover {
+      color: white;
     }
 
-    .large {
-      font-size: 1.35rem;
-    }
-
-    .largest {
-      font-size: 1.55rem;
-    }
-
-    @media (max-width: 700px) {
-      h1 {
-        font-size: 2rem;
-        letter-spacing: 3px;
-      }
-
-      .poem-shape {
-        font-size: 0.9rem;
-        letter-spacing: -0.5px;
+    @media (max-width: 650px) {
+      .line {
+        width: auto !important;
+        white-space: normal;
       }
     }
   </style>
 </head>
 
 <body>
-  <main class="page">
-    <h1>FROM SHY TO BOLD</h1>
+  <main>
+    <h1>Small to Seen</h1>
 
-    <section class="poem-shape" aria-label="Concrete poem about becoming confident through design">
-      <span class="line small">I arrived quiet,</span>
-      <span class="line medium">carrying New York shadows inside</span>
-      <span class="line large">folded hands. Texas opened like sunlight</span>
-      <span class="line largest">across my screen. Now I design louder: color becomes courage,</span>
-      <span class="line largest">motion becomes memory, buttons become doors. My manifesto is simple:</span>
-      <span class="line large">build what helps shy voices glow, move, speak,</span>
-      <span class="line medium">and take up space.</span>
+    <section class="poem" aria-label="Concrete poem: Small to Seen">
+      <span class="line w1">small,</span>
+      <span class="line w2">I carried</span>
+      <span class="line w3">New York noise</span>
+      <span class="line w4">inside folded hands,</span>
+      <span class="line w5">hiding bright ideas.</span>
+      <span class="line w6">Texas opened the sky.</span>
+      <span class="line w7">My voice learned heat,</span>
+      <span class="line w8">color, courage, and <a href="https://cometmail-my.sharepoint.com/:p:/g/personal/deo220000_utdallas_edu/IQAWJta_yP50Qq8uT9vAWZIBAcqRPyV5jceB0qrC2XOQb50?e=I1ADZx" target="_blank" rel="noopener noreferrer">design</a>.</span>
+      <span class="line w9">Now I build pages</span>
+      <span class="line w10">that turn fear</span>
+      <span class="line w11">into doors,</span>
+      <span class="line w12">memory into motion,</span>
+      <span class="line w13">softness into power,</span>
+      <span class="line w14">and every click</span>
+      <span class="line w15">says: keep walking,</span>
+      <span class="line w16">Danielle,</span>
+      <span class="line w17">be seen.</span>
     </section>
   </main>
 </body>
